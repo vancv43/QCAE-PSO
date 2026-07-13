@@ -1,0 +1,5 @@
+torch>=2.3
+numpy>=2.0
+scikit-learn>=1.5
+scikit-image>=0.25
+matplotlib>=3.8
