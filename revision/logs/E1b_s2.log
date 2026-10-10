@@ -1,0 +1,16 @@
+[s=2 orig] [PSO] trial 0: best_f=0.6727 decoded={'lr': 0.01, 'weight_decay': 1e-06, 'p_layers': 3, 'hidden_channels': 16} cost=175.8s
+[s=2 orig] [PSO] trial 1: best_f=0.6615 decoded={'lr': 0.01, 'weight_decay': 9.227310281091432e-06, 'p_layers': 3, 'hidden_channels': 16} cost=167.3s
+[s=2 orig] [GWO] trial 0: best_f=0.7652 decoded={'lr': 0.01, 'weight_decay': 8.077078420383005e-05, 'p_layers': 1, 'hidden_channels': 16} cost=122.0s
+[s=2 orig] [GWO] trial 1: best_f=0.6665 decoded={'lr': 0.01, 'weight_decay': 5.739954472659432e-06, 'p_layers': 3, 'hidden_channels': 16} cost=128.9s
+[s=2 orig] [HHO] trial 0: best_f=0.6753 decoded={'lr': 0.01, 'weight_decay': 0.00017691369719967568, 'p_layers': 3, 'hidden_channels': 16} cost=120.5s
+[s=2 orig] [HHO] trial 1: best_f=0.9333 decoded={'lr': 0.01, 'weight_decay': 2.703198195698073e-06, 'p_layers': 3, 'hidden_channels': 4} cost=92.3s
+[s=2 orig] [BAT] trial 0: best_f=0.9284 decoded={'lr': 0.004632042167071192, 'weight_decay': 0.0005487957000013307, 'p_layers': 3, 'hidden_channels': 16} cost=230.7s
+[s=2 orig] [BAT] trial 1: best_f=0.8818 decoded={'lr': 0.005625968458864019, 'weight_decay': 0.00015743343720338028, 'p_layers': 2, 'hidden_channels': 16} cost=125.2s
+[s=2 orig] [E-HHO] trial 0: best_f=0.8014 decoded={'lr': 0.00779191732861269, 'weight_decay': 3.102241352875393e-06, 'p_layers': 2, 'hidden_channels': 16} cost=112.7s
+[s=2 orig] [E-HHO] trial 1: best_f=0.7172 decoded={'lr': 0.01, 'weight_decay': 1.8236252713932688e-06, 'p_layers': 1, 'hidden_channels': 16} cost=100.9s
+[s=2 orig] QCAE-PSO: {'0.25': 0.2922828917560422, '0.5': 0.2928188490769204, '0.75': 0.2936200244076295, '1.0': 0.21769849874939254} mean=0.2741
+[s=2 orig] QCAE-GWO: {'0.25': 0.35797602424199426, '0.5': 0.3185493430545836, '0.75': 0.27393601062345213, '1.0': 0.2863562247322079} mean=0.3092
+[s=2 orig] QCAE-HHO: {'0.25': 0.254221896512459, '0.5': 0.20980422332559778, '0.75': 0.22336632599386916, '1.0': 0.19579137062159382} mean=0.2208
+[s=2 orig] QCAE-BAT: {'0.25': 0.21159348126770078, '0.5': 0.19271195003396244, '0.75': 0.19356730913439954, '1.0': 0.15395907749687995} mean=0.1880
+[s=2 orig] QCAE-E-HHO: {'0.25': 0.25809264989668756, '0.5': 0.23381604353238383, '0.75': 0.26625992391130593, '1.0': 0.22580457315656105} mean=0.2460
+DONE

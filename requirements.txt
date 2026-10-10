@@ -1,5 +1,7 @@
-torch>=2.3
-numpy>=2.0
-scikit-learn>=1.5
-scikit-image>=0.25
-matplotlib>=3.8
+# versions used to produce the reported results
+torch==2.13.0
+numpy==2.2.6
+scipy==1.15.3
+scikit-learn==1.7.2
+scikit-image==0.25.2
+matplotlib==3.8.4

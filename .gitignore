@@ -1,5 +1,8 @@
 __pycache__/
 *.pyc
 *.pt
+!results/checkpoints/*.pt
 data/
 .DS_Store
+*.aux
+*.log.tmp

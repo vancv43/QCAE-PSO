@@ -1,0 +1,115 @@
+{
+  "CCAE-manual": {
+    "recon_pixel_std_across_inputs_mean": 0.0049761333502829075,
+    "recon_mean_intensity": 0.121009960770607,
+    "clean_pixel_std_across_inputs_mean": 0.1752794086933136
+  },
+  "QCAE-manual": {
+    "recon_pixel_std_across_inputs_mean": 0.0605655312538147,
+    "recon_mean_intensity": 0.3255575895309448,
+    "clean_pixel_std_across_inputs_mean": 0.1752794086933136,
+    "frac_saturated_tanh_gt_0.99": 0.007499999832361937,
+    "latent_z_std_across_inputs": [
+      0.46780309081077576,
+      0.42476171255111694,
+      0.5912832617759705,
+      0.5446088910102844
+    ],
+    "angle_std_across_inputs": [
+      2.0546364784240723,
+      1.9356379508972168,
+      1.9217413663864136,
+      2.0750675201416016
+    ]
+  },
+  "QCAE-PSO": {
+    "recon_pixel_std_across_inputs_mean": 0.12594591081142426,
+    "recon_mean_intensity": 0.1211957186460495,
+    "clean_pixel_std_across_inputs_mean": 0.1752794086933136,
+    "frac_saturated_tanh_gt_0.99": 0.004999999888241291,
+    "latent_z_std_across_inputs": [
+      0.3953700661659241,
+      0.37902987003326416,
+      0.5402249097824097,
+      0.32001981139183044
+    ],
+    "angle_std_across_inputs": [
+      1.7906631231307983,
+      1.7686660289764404,
+      1.8989481925964355,
+      2.0248260498046875
+    ]
+  },
+  "QCAE-GWO": {
+    "recon_pixel_std_across_inputs_mean": 0.09248992055654526,
+    "recon_mean_intensity": 0.12933139503002167,
+    "clean_pixel_std_across_inputs_mean": 0.1752794086933136,
+    "frac_saturated_tanh_gt_0.99": 0.0024999999441206455,
+    "latent_z_std_across_inputs": [
+      0.432879239320755,
+      0.35679513216018677,
+      0.46596282720565796,
+      0.44836774468421936
+    ],
+    "angle_std_across_inputs": [
+      1.9332668781280518,
+      1.8136996030807495,
+      1.8360356092453003,
+      1.9096063375473022
+    ]
+  },
+  "QCAE-HHO": {
+    "recon_pixel_std_across_inputs_mean": 0.09659375995397568,
+    "recon_mean_intensity": 0.12229850888252258,
+    "clean_pixel_std_across_inputs_mean": 0.1752794086933136,
+    "frac_saturated_tanh_gt_0.99": 0.029999999329447746,
+    "latent_z_std_across_inputs": [
+      0.710813581943512,
+      0.612403392791748,
+      0.5840578675270081,
+      0.5863886475563049
+    ],
+    "angle_std_across_inputs": [
+      2.0651698112487793,
+      1.963362693786621,
+      2.1863937377929688,
+      2.111908197402954
+    ]
+  },
+  "QCAE-BAT": {
+    "recon_pixel_std_across_inputs_mean": 0.08680035918951035,
+    "recon_mean_intensity": 0.16470864415168762,
+    "clean_pixel_std_across_inputs_mean": 0.1752794086933136,
+    "frac_saturated_tanh_gt_0.99": 0.0,
+    "latent_z_std_across_inputs": [
+      0.7089493274688721,
+      0.4499981701374054,
+      0.4357084631919861,
+      0.4753701984882355
+    ],
+    "angle_std_across_inputs": [
+      1.5496934652328491,
+      1.6020777225494385,
+      1.2834843397140503,
+      1.8015915155410767
+    ]
+  },
+  "QCAE-E-HHO": {
+    "recon_pixel_std_across_inputs_mean": 0.11119695752859116,
+    "recon_mean_intensity": 0.13231925666332245,
+    "clean_pixel_std_across_inputs_mean": 0.1752794086933136,
+    "frac_saturated_tanh_gt_0.99": 0.004999999888241291,
+    "latent_z_std_across_inputs": [
+      0.6785634160041809,
+      0.4594404995441437,
+      0.5052075982093811,
+      0.5478021502494812
+    ],
+    "angle_std_across_inputs": [
+      1.768059253692627,
+      1.8689523935317993,
+      1.521813154220581,
+      1.8855102062225342
+    ]
+  }
+}

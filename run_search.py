@@ -1,4 +1,4 @@
-"""Full experiment: PSO / GWO / E-HHO hyperparameter search for QCAE,
+"""Full experiment: PSO / GWO / HHO / BAT / E-HHO hyperparameter search for QCAE,
 baseline CCAE and manual-QCAE, final retraining, and evaluation across
 Gaussian noise levels sigma in {0.25, 0.5, 0.75, 1.0} on a held-out test set.
 
@@ -18,6 +18,7 @@ from metaheuristics import (
 from skimage.metrics import structural_similarity as ssim_fn
 
 RESULTS_DIR = "results"
+CKPT_DIR = f"{RESULTS_DIR}/checkpoints"
 SEARCH_EPOCHS = 25
 FINAL_EPOCHS = 80
 N_POP = 6
@@ -37,6 +38,8 @@ def mean_ssim(recon_np, clean_np):
 
 
 def main():
+    import os
+    os.makedirs(CKPT_DIR, exist_ok=True)
     t_start = time.time()
     xtr, ytr, xte, yte = load_binary_mnist(n_train_per_class=200, n_test_per_class=50, seed=0)
     # xtr: 400 samples (200/200), xte: 100 samples held out entirely for final eval
@@ -149,7 +152,7 @@ def main():
             "ssim_by_sigma": per_sigma_ssim,
             "mean_ssim": float(np.mean(list(per_sigma_ssim.values()))),
         }
-        torch.save(model.state_dict(), f"{RESULTS_DIR}/model_{tag}.pt")
+        torch.save(model.state_dict(), f"{CKPT_DIR}/model_{tag}.pt")
 
     total_time = time.time() - t_start
     output = {

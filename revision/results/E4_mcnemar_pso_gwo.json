@@ -1,0 +1,7 @@
+{
+  "acc_pso": 0.52,
+  "acc_gwo": 0.61,
+  "pso_right_gwo_wrong": 16,
+  "gwo_right_pso_wrong": 25,
+  "exact_mcnemar_p": 0.21102359760880063
+}
