@@ -67,7 +67,6 @@ results/
   checkpoints/                  the seven trained final models used in the paper
 figures/
   Fig1-Fig7, Algorithm1 PDF     all figures of the paper
-  tikz/                         LaTeX sources of Figures 1-2 and Algorithm 1
 revision/
   PROTOCOL.md                   experiment protocol, fixed before the revision runs, plus an addendum
   run_revision.py               E1a retraining seeds, E1b search repetitions, E2 widened space, E3 diagnosis
