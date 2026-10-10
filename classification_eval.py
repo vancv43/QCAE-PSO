@@ -91,4 +91,4 @@ with open("results/classification_results.json", "w") as f:
     json.dump({"classifier_clean_train_acc": clean_train_acc, "sigma": SIGMA_EVAL,
                "results": results}, f, indent=2)
 
-print("Metrics written to results/classification_results.json; run make_figures.py for Figures 6-7.")
+print("Metrics written to results/classification_results.json")

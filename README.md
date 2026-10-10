@@ -59,7 +59,6 @@ metaheuristics.py       PSO, GWO, HHO, BAT and E-HHO, the search space decoder a
 data_utils.py           Binary MNIST loader and Gaussian noise injection
 run_search.py           Search, final retraining and test evaluation -> results/results.json
 classification_eval.py  Downstream classification metrics -> results/classification_results.json
-make_figures.py         Figures 3-7 of the paper as vector PDF in figures/
 results/
   results.json                  search histories, selected hyperparameters, test SSIM, training curves
   classification_results.json   confusion matrices, ROC and precision-recall data
@@ -102,11 +101,10 @@ Main experiment, about 40 minutes on an 8-core CPU:
 ```bash
 python run_search.py           # results/results.json and results/checkpoints/
 python classification_eval.py  # results/classification_results.json
-python make_figures.py         # figures/Fig3-Fig7 PDF
 ```
 
-`classification_eval.py` and `make_figures.py` read the checkpoints in `results/checkpoints/`, so they
-reproduce the paper's Table 7 and Figures 3 to 7 without rerunning the search.
+`classification_eval.py` reads the checkpoints in `results/checkpoints/`, so it reproduces the paper's
+Table 7 without rerunning the search.
 
 Revision experiments, run from the repository root:
 
