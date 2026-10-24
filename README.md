@@ -42,7 +42,6 @@ Nothing in the paper was typed by hand from memory. Each table and each numerica
 | Table 7, Figures 6–7 | `results/classification_results.json` | `python classification_eval.py` rebuilds it from the checkpoints, byte-identical |
 | Tables 4–6, robustness statements | `revision/results/*.json`, logs in `revision/logs/` | `python verify_results.py`; `python revision/aggregate.py` rebuilds `revision/results/summary.md`, byte-identical |
 | McNemar test, QCAE-manual diagnosis | `revision/results/E4_mcnemar_pso_gwo.json`, `E3_diagnose.json`, `E3b_manual_longer.json` | `python revision/mcnemar_pso_gwo.py`, `python revision/run_revision.py diagnose`, byte-identical |
-| Protocol of the robustness experiments | `revision/PROTOCOL.md`, fixed before the runs, with a dated addendum for the two post-hoc analyses | read |
 | Integrity of the result files | `CHECKSUMS.sha256` | `shasum -a 256 -c CHECKSUMS.sha256` |
 
 `verify_results.py` compares 271 values printed in the paper, every cell of Tables 1, 2, 4, 5, 6 and 7 and the numerical statements of the abstract and results text, with values recomputed from the JSON files at the precision printed in the paper. All 271 match; the full list is in [`results/verification_report.md`](results/verification_report.md). Two statements are not covered by a script: the reference values of Kit et al. in Table 3, read from that paper's figure, and the shrinking spread of the PSO population, which comes from a diagnostic run whose output was not saved.
@@ -181,7 +180,7 @@ Measured on the published checkpoints. Clean test images have a pixel SD across 
 - **HHO implementation.** Plain HHO and E-HHO keep the exploration phase of Heidari et al. (2019) and replace the four besiege strategies, including the Lévy-flight dives, with the single move `x = x_rabbit − E·|J·x_rabbit − x|`.
 - **Evaluation budget.** E-HHO's opposition step costs one evaluation per iteration, so E-HHO trains up to 48 configurations per trial against 42 for the others. GWO's code calls the fitness function 54 times per trial, but 12 of these calls re-read the already evaluated beta and delta leaders from the cache, so GWO also trains at most 42 configurations; `verify_results.py` checks this on the logged evaluations.
 - **Fitness cache.** Fitness values are cached per configuration and shared across trials and optimizers. Because every candidate is trained with the same seed, a cached value is identical to a fresh one. In the three logged repetitions only one or two of about 380 distinct configurations per run had already been trained by another trial or optimizer, so the effect on the search costs is negligible.
-- **Post-hoc analyses.** The longer retraining of QCAE-manual (E3b) and the McNemar test (E4) were added after the fixed protocol and are marked as such in `revision/PROTOCOL.md`. A first E3b run used one CPU thread; it was repeated with two threads like every other revision run and the superseded file is kept in `revision/results/superseded/`.
+- **Post-hoc analyses.** The longer retraining of QCAE-manual (E3b) and the McNemar test (E4) were added after the planned robustness experiments. A first E3b run used one CPU thread; it was repeated with two threads like every other revision run and the superseded file is kept in `revision/results/superseded/`.
 
 ## Reproducing the study
 Python 3.10 and the pinned packages:
@@ -245,7 +244,6 @@ results/
   checkpoints/                  the seven trained final models
   verification_report.md        output of verify_results.py
 revision/
-  PROTOCOL.md                   protocol of the robustness experiments, fixed before the runs
   logs/, results/               console logs and result files of every robustness run
 figures/                 figures of the paper, vector PDF; png/ holds 300-dpi copies shown on this page
 CHECKSUMS.sha256         SHA-256 of every result, log and checkpoint file

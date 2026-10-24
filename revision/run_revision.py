@@ -5,7 +5,7 @@
 #     Bangkok, Thailand, s6807011866029@email.kmutnb.ac.th, phayung.m@itd.kmutnb.ac.th
 # (*) Corresponding authors
 #
-"""Revision R1 experiments (see PROTOCOL.md).
+"""Robustness experiments of the paper.
 
   python run_revision.py retrain_seeds              # E1a
   python run_revision.py search --s 1 --space orig  # E1b (s in 1,2,3)
