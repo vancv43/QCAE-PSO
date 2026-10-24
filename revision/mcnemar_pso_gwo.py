@@ -1,3 +1,10 @@
+# Van Van Chau(1), Hao Anh Nguyen(1), Tuan Minh Nguyen(1,*), Chinda Thorn(2), and Phayung Meesad(2,*)
+# (1) Faculty of Information Technology, Posts and Telecommunications Institute of Technology,
+#     Ho Chi Minh City, Viet Nam, vancv@ptit.edu.vn, haona@ptit.edu.vn, minhtuan@ptit.edu.vn
+# (2) Department of Information Technology Management, King Mongkut's University of Technology North Bangkok,
+#     Bangkok, Thailand, s6807011866029@email.kmutnb.ac.th, phayung.m@itd.kmutnb.ac.th
+# (*) Corresponding authors
+#
 """Exact McNemar test on paired downstream predictions of QCAE-PSO vs QCAE-GWO at sigma = 0.5.
 Re-runs the published classifier set-up of classification_eval.py on the published checkpoints."""
 import json, sys, os

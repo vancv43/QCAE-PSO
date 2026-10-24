@@ -1,0 +1,35 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the article."
+title: "Metaheuristic-Optimized Quantum Convolutional Autoencoder for Image Noise Reduction"
+authors:
+  - family-names: Chau
+    given-names: Van Van
+    orcid: "https://orcid.org/0009-0008-0325-6809"
+  - family-names: Nguyen
+    given-names: Hao Anh
+  - family-names: Nguyen
+    given-names: Tuan Minh
+    orcid: "https://orcid.org/0000-0002-4035-1759"
+  - family-names: Thorn
+    given-names: Chinda
+  - family-names: Meesad
+    given-names: Phayung
+    orcid: "https://orcid.org/0000-0002-3742-6457"
+repository-code: "https://github.com/vancv43/QCAE-PSO"
+license: MIT
+preferred-citation:
+  type: article
+  title: "Metaheuristic-Optimized Quantum Convolutional Autoencoder for Image Noise Reduction"
+  journal: "SN Computer Science"
+  year: 2026
+  authors:
+    - family-names: Chau
+      given-names: Van Van
+    - family-names: Nguyen
+      given-names: Hao Anh
+    - family-names: Nguyen
+      given-names: Tuan Minh
+    - family-names: Thorn
+      given-names: Chinda
+    - family-names: Meesad
+      given-names: Phayung

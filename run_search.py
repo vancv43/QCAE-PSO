@@ -1,3 +1,10 @@
+# Van Van Chau(1), Hao Anh Nguyen(1), Tuan Minh Nguyen(1,*), Chinda Thorn(2), and Phayung Meesad(2,*)
+# (1) Faculty of Information Technology, Posts and Telecommunications Institute of Technology,
+#     Ho Chi Minh City, Viet Nam, vancv@ptit.edu.vn, haona@ptit.edu.vn, minhtuan@ptit.edu.vn
+# (2) Department of Information Technology Management, King Mongkut's University of Technology North Bangkok,
+#     Bangkok, Thailand, s6807011866029@email.kmutnb.ac.th, phayung.m@itd.kmutnb.ac.th
+# (*) Corresponding authors
+#
 """Full experiment: PSO / GWO / HHO / BAT / E-HHO hyperparameter search for QCAE,
 baseline CCAE and manual-QCAE, final retraining, and evaluation across
 Gaussian noise levels sigma in {0.25, 0.5, 0.75, 1.0} on a held-out test set.
@@ -76,7 +83,8 @@ def main():
         trial_hists = []
         trial_costs = []
         for trial in range(N_TRIALS):
-            fitness.__wrapped_cache__ = {}  # not used, just documenting no cross-trial leakage
+            # the fitness cache is shared by all trials and optimizers; a cached value equals a fresh one
+            # because every candidate is trained with the same seed
             t0 = time.time()
             best_vec, best_f, hist = fn(fitness, n_pop=N_POP, n_iter=N_ITER, seed=100 * trial + NAME_OFFSET[name])
             cost = time.time() - t0
