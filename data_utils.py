@@ -1,5 +1,7 @@
 # Van Van Chau(1), Hao Anh Nguyen(1), Tuan Minh Nguyen(1,*), Chinda Thorn(2), and Phayung Meesad(2,*)
-# (1) Faculty of Information Technology, Posts and Telecommunications Institute of Technology,
+# SN Computer Science (2026) 7:832, https://doi.org/10.1007/s42979-026-05427-1
+# (1) Quantum Intelligence Algorithms Laboratory, Department of Information Security, Faculty of Information
+#     Technology, Posts and Telecommunications Institute of Technology,
 #     Ho Chi Minh City, Viet Nam, vancv@ptit.edu.vn, haona@ptit.edu.vn, minhtuan@ptit.edu.vn
 # (2) Department of Information Technology Management, King Mongkut's University of Technology North Bangkok,
 #     Bangkok, Thailand, s6807011866029@email.kmutnb.ac.th, phayung.m@itd.kmutnb.ac.th

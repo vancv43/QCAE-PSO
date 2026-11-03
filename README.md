@@ -6,13 +6,14 @@
 
 **Van Van Chau**<sup>1</sup> · **Hao Anh Nguyen**<sup>1</sup> · **Tuan Minh Nguyen**<sup>1,*</sup> · **Chinda Thorn**<sup>2</sup> · **Phayung Meesad**<sup>2,*</sup>
 
-<sup>1</sup> Faculty of Information Technology, Posts and Telecommunications Institute of Technology, Ho Chi Minh City, Viet Nam<br>
+<sup>1</sup> Quantum Intelligence Algorithms Laboratory, Department of Information Security, Faculty of Information Technology, Posts and Telecommunications Institute of Technology, Ho Chi Minh City, Viet Nam<br>
 <sup>2</sup> Department of Information Technology Management, King Mongkut's University of Technology North Bangkok, Bangkok, Thailand<br>
 <sup>*</sup> Corresponding authors
 
-*SN Computer Science*, manuscript SNCS-D-26-06066R1, accepted for publication, 2026
+*SN Computer Science* **7**, 832 (2026) · [https://doi.org/10.1007/s42979-026-05427-1](https://doi.org/10.1007/s42979-026-05427-1)<br>
+Received 16 July 2026 · Accepted 23 October 2026
 
-![Python](https://img.shields.io/badge/python-3.10-blue) ![License: MIT](https://img.shields.io/badge/code-MIT-green) ![Data: MNIST](https://img.shields.io/badge/data-MNIST-lightgrey) ![Checks](https://img.shields.io/badge/reported%20numbers-verified%20by%20script-brightgreen)
+[![DOI](https://img.shields.io/badge/DOI-10.1007/s42979--026--05427--1-blue)](https://doi.org/10.1007/s42979-026-05427-1) ![Python](https://img.shields.io/badge/python-3.10-blue) ![License: MIT](https://img.shields.io/badge/code-MIT-green) ![Data: MNIST](https://img.shields.io/badge/data-MNIST-lightgrey) ![Checks](https://img.shields.io/badge/reported%20numbers-verified%20by%20script-brightgreen)
 
 </div>
 
@@ -22,7 +23,7 @@
 [Abstract](#abstract) · [Contributions](#contributions) · [Evidence for every reported number](#evidence-for-every-reported-number) · [Method and protocol](#method-and-protocol) · [Results](#results) · [What the results show and what they do not](#what-the-results-show-and-what-they-do-not) · [Reproducibility notes](#reproducibility-notes) · [Reproducing the study](#reproducing-the-study) · [Repository layout](#repository-layout) · [Data and license](#data-and-license) · [Citation](#citation)
 
 ## Abstract
-Residual noise degrades the visual quality of images and downstream machine learning tasks. Quantum Convolutional Autoencoders (QCAE) replace the latent space of a classical convolutional autoencoder with an ansatz circuit inspired by the Quantum Approximate Optimization algorithm (QAOA), yet their ansatz depth and training hyperparameters are still set by hand. Building on the QCAE of Kit et al., this study tunes them with Particle Swarm Optimization (PSO) and compares it with the grey wolf optimizer, the bat algorithm, plain Harris Hawks Optimization (HHO), and an enhanced HHO variant. The ansatz is reimplemented as a differentiable state vector layer, and all five optimizers search the same four-dimensional space on a reduced binary MNIST denoising benchmark under Gaussian noise. In the primary run, the PSO-searched QCAE achieved the highest mean test SSIM, about 72% above the classical baseline, and its configuration kept the highest mean SSIM over five retraining seeds. Across four full search repetitions, PSO, the grey wolf optimizer and the enhanced HHO variant reached nearly equal mean SSIM, while plain HHO and the bat algorithm were weaker and less stable. Among the searched configurations, however, the grey wolf optimizer gave the best downstream classification accuracy, precision, recall, F1-score and AUC and PSO led on none, although these differences lay within sampling error. An exploratory search with a wider learning-rate range raised the test SSIM of every optimizer by a factor of 1.7 to 3.6, so the search bounds matter at least as much as the choice of optimizer.
+Image denoising is essential for reliable image analysis, as residual noise degrades both visual quality and downstream machine learning tasks. Quantum Convolutional Autoencoders (QCAE), have been proposed to improve on classical convolutional autoencoders by replacing the latent space with an ansatz circuit inspired by the Quantum Approximate Optimization algorithm (QAOA). Existing studies still set the ansatz depth and the training hyperparameters by hand, so performance rests on trial and error. Building on the QCAE architecture of Kit et al., this study optimizes its hyperparameters with Particle Swarm Optimization (PSO), validated against four alternatives: grey wolf optimizer, the bat algorithm, plain Harris Hawks Optimization (HHO), and an enhanced Harris Hawks variant. The QAOA-inspired ansatz is reimplemented as a differentiable state vector layer, and all five optimizers search an identical four-dimensional hyperparameter space on a reduced binary MNIST denoising benchmark under Gaussian noise. In the primary run, the PSO-searched QCAE achieved the highest mean test SSIM among all configurations, about 72% above the classical CAE baseline. Over five retraining seeds, its selected configuration had the highest mean SSIM and led in at least four of the five seeds. Across four independent repetitions of the whole search, PSO, the grey wolf optimizer and the enhanced Harris hawks variant reached nearly equal mean SSIM, while plain Harris hawks and the bat algorithm were weaker and less stable. An exploratory search with a wider learning-rate range raised the test SSIM of every optimizer by a factor of 1.7 to 3.6. Metaheuristic search therefore benefits QCAE, but the choice of search bounds matters at least as much as the choice of optimizer.
 
 ## Contributions
 1. **PSO-based hyperparameter search for QCAE.** PSO searches the QAOA ansatz depth together with the learning rate, weight decay and hidden width, and is compared with four other optimizers under the same population size and number of iterations, over repeated searches and retraining seeds.
@@ -253,7 +254,13 @@ CHECKSUMS.sha256         SHA-256 of every result, log and checkpoint file
 The study uses the MNIST handwritten digit database of Y. LeCun, C. Cortes and C. J. C. Burges, available under CC BY-SA 3.0. The images are not redistributed here; `data_utils.py` selects the subset from the original files with a fixed seed. The code is released under the MIT License.
 
 ## Citation
-The article is accepted in *SN Computer Science*. Until its DOI is available, please cite it as below or use `CITATION.cff`.
+If you use this code, please cite the published article (also available in `CITATION.cff`).
+
+**APA 7th**
+
+> Chau, V. V., Nguyen, H. A., Nguyen, T. M., Thorn, C., & Meesad, P. (2026). Metaheuristic-optimized quantum convolutional autoencoder for image noise reduction. *SN Computer Science*, *7*, Article 832. https://doi.org/10.1007/s42979-026-05427-1
+
+**BibTeX**
 
 ```bibtex
 @article{chau2026qcaepso,
@@ -261,7 +268,10 @@ The article is accepted in *SN Computer Science*. Until its DOI is available, pl
   author  = {Chau, Van Van and Nguyen, Hao Anh and Nguyen, Tuan Minh and Thorn, Chinda and Meesad, Phayung},
   journal = {SN Computer Science},
   year    = {2026},
-  note    = {Accepted for publication}
+  volume  = {7},
+  pages   = {832},
+  doi     = {10.1007/s42979-026-05427-1},
+  url     = {https://doi.org/10.1007/s42979-026-05427-1}
 }
 ```
 

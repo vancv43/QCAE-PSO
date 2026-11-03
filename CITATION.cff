@@ -15,6 +15,7 @@ authors:
   - family-names: Meesad
     given-names: Phayung
     orcid: "https://orcid.org/0000-0002-3742-6457"
+doi: "10.1007/s42979-026-05427-1"
 repository-code: "https://github.com/vancv43/QCAE-PSO"
 license: MIT
 preferred-citation:
@@ -22,6 +23,10 @@ preferred-citation:
   title: "Metaheuristic-Optimized Quantum Convolutional Autoencoder for Image Noise Reduction"
   journal: "SN Computer Science"
   year: 2026
+  volume: 7
+  start: 832
+  doi: "10.1007/s42979-026-05427-1"
+  url: "https://doi.org/10.1007/s42979-026-05427-1"
   authors:
     - family-names: Chau
       given-names: Van Van
