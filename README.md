@@ -256,6 +256,10 @@ The study uses the MNIST handwritten digit database of Y. LeCun, C. Cortes and C
 ## Citation
 If you use this code, please cite the published article (also available in `CITATION.cff`).
 
+**Cite this article** (as given by the publisher)
+
+> Chau, V.V., Nguyen, H.A., Nguyen, T.M. et al. Metaheuristic-Optimized Quantum Convolutional Autoencoder for Image Noise Reduction. *SN COMPUT. SCI.* **7**, 832 (2026). https://doi.org/10.1007/s42979-026-05427-1
+
 **APA 7th**
 
 > Chau, V. V., Nguyen, H. A., Nguyen, T. M., Thorn, C., & Meesad, P. (2026). Metaheuristic-optimized quantum convolutional autoencoder for image noise reduction. *SN Computer Science*, *7*, Article 832. https://doi.org/10.1007/s42979-026-05427-1
