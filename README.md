@@ -10,8 +10,8 @@
 <sup>2</sup> Department of Information Technology Management, King Mongkut's University of Technology North Bangkok, Bangkok, Thailand<br>
 <sup>*</sup> Corresponding authors
 
-*SN Computer Science* **7**, 832 (2026) · [https://doi.org/10.1007/s42979-026-05427-1](https://doi.org/10.1007/s42979-026-05427-1)<br>
-Received 16 July 2026 · Accepted 23 October 2026
+Original Research · *SN Computer Science*, Volume 7, article number 832 (2026) · [https://doi.org/10.1007/s42979-026-05427-1](https://doi.org/10.1007/s42979-026-05427-1)<br>
+Received 16 July 2026 · Accepted 23 October 2026 · Published 03 November 2026
 
 [![DOI](https://img.shields.io/badge/DOI-10.1007/s42979--026--05427--1-blue)](https://doi.org/10.1007/s42979-026-05427-1) ![Python](https://img.shields.io/badge/python-3.10-blue) ![License: MIT](https://img.shields.io/badge/code-MIT-green) ![Data: MNIST](https://img.shields.io/badge/data-MNIST-lightgrey) ![Checks](https://img.shields.io/badge/reported%20numbers-verified%20by%20script-brightgreen)
 
